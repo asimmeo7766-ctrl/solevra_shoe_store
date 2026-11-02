@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Traditional Peshawari leather footwear. Shop premium red, maroon and black styles with home delivery." />
+  <title>Solevra | Traditional Leather Footwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Traditional craftsmanship, delivered to your doorstep <span>✦</span> WhatsApp: +92 322 9292184</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Solevra home">
+      <span class="brand-mark">S</span><span><b>SOLEVRA</b><small>TRADITIONAL FOOTWEAR</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#collection">Collection</a><a href="#story">Our Craft</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="accountBtn" title="My account" aria-label="My account">♙</button>
+      <button class="cart-button" id="cartOpen">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">TIMELESS • TRADITIONAL • HAND-FINISHED</p>
+        <h1>Step into<br><em>tradition.</em></h1>
+        <p class="hero-text">Classic Peshawari footwear with a confident look and everyday comfort.</p>
+        <a class="gold-button" href="#collection">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span class="note-line"></span> A classic for every occasion</div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="assets/images/footwear-04.png" alt="Traditional red leather Peshawari chappal" class="hero-image">
+        <div class="hero-stamp"><span>CRAFTED</span><b>WITH<br>TRADITION</b><small>EST. WITH CARE</small></div>
+      </div>
+      <div class="hero-side">LEATHER · COMFORT · CHARACTER</div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span class="trust-icon">✧</span><b>Traditional style</b><small>Classic Peshawari design</small></div>
+      <div><span class="trust-icon">⌁</span><b>Comfort-focused</b><small>Made for everyday wear</small></div>
+      <div><span class="trust-icon">◇</span><b>Home delivery</b><small>Delivered to your location</small></div>
+      <div><span class="trust-icon">☎</span><b>Personal support</b><small>Speak with our team</small></div>
+    </section>
+
+    <section class="collection section" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE SIGNATURE COLLECTION</p><h2>Tradition, in every step.</h2></div>
+        <p>Choose your colour and size. Your pair, your way.</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="craft-section" id="story">
+      <div class="craft-image"><img src="assets/images/footwear-06.png" alt="Black traditional Peshawari footwear"></div>
+      <div class="craft-copy">
+        <p class="eyebrow">ROOTED IN HERITAGE</p>
+        <h2>Made to honour<br><em>the tradition.</em></h2>
+        <p>Inspired by traditional Peshawari footwear, this collection brings together a timeless silhouette, detailed finishing and a versatile look for everyday and special occasions.</p>
+        <a href="#collection" class="text-link">Find your pair <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="gallery-section section">
+      <div class="section-heading"><div><p class="eyebrow">A CLOSER LOOK</p><h2>Details matter.</h2></div><p>Explore the original product photographs.</p></div>
+      <div class="photo-gallery" id="photoGallery"></div>
+    </section>
+
+    <section class="delivery-banner">
+      <div><p class="eyebrow">A FEW CLICKS AWAY</p><h2>Your next favourite pair<br><em>is waiting.</em></h2></div>
+      <a class="dark-button" href="#collection">Shop the collection <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark">S</span><span><b>SOLEVRA</b><small>TRADITIONAL FOOTWEAR</small></span></a><p>Traditional footwear. Timeless character.</p></div>
+      <div><h4>Explore</h4><a href="#home">Home</a><a href="#collection">Shop collection</a><a href="#story">Our craft</a></div>
+      <div><h4>Customer care</h4><a href="#contact">Contact us</a><a href="https://wa.me/923229292184" target="_blank" rel="noopener">WhatsApp support</a><span>Home delivery available</span></div>
+      <div><h4>Get in touch</h4><a href="tel:+923229292184">+92 322 9292184</a><a href="https://wa.me/923229292184" target="_blank" rel="noopener">Chat on WhatsApp ↗</a><span>For orders and product information</span></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Solevra. All rights reserved.</span><span>Traditional leather footwear</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h3>Shopping bag</h3></div><button class="close-button" data-close>×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary"><div><span>Subtotal</span><b id="cartSubtotal">Rs. 0</b></div><p>Delivery charges, if any, will be confirmed before dispatch.</p><button class="gold-button full" id="checkoutBtn">Continue to checkout</button></div>
+  </aside>
+
+  <section class="modal" id="accountModal" aria-modal="true" role="dialog">
+    <button class="close-button modal-close" data-close>×</button>
+    <p class="eyebrow">WELCOME</p><h3 id="accountTitle">Your account</h3>
+    <div class="tabs"><button class="tab active" data-tab="login">Login</button><button class="tab" data-tab="register">Create account</button></div>
+    <form id="accountForm">
+      <div class="field" id="nameField" hidden><label>Full name</label><input name="name" autocomplete="name" placeholder="Your name"></div>
+      <div class="field"><label>Email address</label><input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+      <div class="field"><label>Password</label><input name="password" type="password" required minlength="6" autocomplete="current-password" placeholder="At least 6 characters"></div>
+      <button class="gold-button full" id="accountSubmit">Login</button>
+      <p class="form-message" id="accountMessage"></p>
+    </form>
+    <p class="small-print">Demo account data is stored in this browser only. Connect a secure backend before accepting real customer accounts.</p>
+  </section>
+
+  <section class="modal checkout-modal" id="checkoutModal" aria-modal="true" role="dialog">
+    <button class="close-button modal-close" data-close>×</button>
+    <p class="eyebrow">ALMOST YOURS</p><h3>Checkout</h3>
+    <form id="checkoutForm">
+      <div class="field"><label>Full name</label><input name="name" required placeholder="Your full name"></div>
+      <div class="field"><label>Phone number</label><input name="phone" required placeholder="+92..."></div>
+      <div class="field"><label>Email address</label><input name="email" type="email" placeholder="Optional"></div>
+      <div class="field"><label>Delivery address</label><textarea name="address" required rows="3" placeholder="House, street, area"></textarea></div>
+      <div class="field"><label>City</label><input name="city" required placeholder="Your city"></div>
+      <div class="field"><label>Payment method</label><select name="payment"><option>Cash on Delivery</option><option>Bank Transfer (arranged with seller)</option><option>JazzCash (arranged with seller)</option><option>Easypaisa (arranged with seller)</option></select></div>
+      <div class="checkout-total"><span>Order subtotal</span><b id="checkoutTotal">Rs. 0</b></div>
+      <button class="gold-button full" type="submit">Place order request</button>
+      <p class="form-message" id="checkoutMessage"></p>
+    </form>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
